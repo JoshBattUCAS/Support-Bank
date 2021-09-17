@@ -10,16 +10,20 @@ namespace Support_Bank
     {
         public String Name;
 
-        public decimal Owed;
+        public Decimal Owed;
 
-        public decimal Owe;
+        public Decimal Owe;
 
-        public Person(String n, decimal od, decimal o)
+        public List<Transaction> Transactions { get; set; }
+
+        public Person(String n, Decimal od, Decimal o)
         {
             Name = n;
             Owed = od;
             Owe = o;
+            Transactions = new List<Transaction>();
 
         }
+
     }
 }

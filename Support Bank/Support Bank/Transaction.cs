@@ -8,7 +8,7 @@ namespace Support_Bank
 {
     class Transaction
     {
-        public DateTime Date;
+        public String Date;
 
         public String From;
 
@@ -18,7 +18,7 @@ namespace Support_Bank
         
         public decimal Amount;
 
-        public Transaction(DateTime d, String f, String t, String n, decimal a)
+        public Transaction(String d, String f, String t, String n, decimal a)
         {
             Date = d;
             From = f;
